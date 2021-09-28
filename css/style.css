@@ -294,8 +294,6 @@ header {
 
 
 @media only screen and (max-width: 990px) {
-
-
   .container {
     max-width: 990px;
 
@@ -365,8 +363,38 @@ header {
   }
 
   .footer__div {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: center;
 
+  }
+
+  .footer__list {
+    flex-grow: 0;
+  }
+
+  .footer__icon {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    max-width: 500px;
+  }
+
+  .header__item {
+    display: none;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .workers__list {
+    width: 80%;
   }
 }
