@@ -1,0 +1,292 @@
+body {
+  background-color: #014E56;
+  font-family: 'Livvic', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__logo {
+  padding-top: 7px;
+}
+
+.header__list:nth-child(1) {
+  margin-right: 40px;
+  padding-top: 20px;
+}
+
+.header__btn {
+  color: var(--ff);
+  padding: 10px 32px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #004047;
+  border-radius: 18px;
+  transition: background 0.5s ease, color 0.6s ease;
+}
+
+
+.header__btn:hover {
+  background-color: transparent;
+  color: #fff;
+  transition: background 0.5s ease, color 0.6s ease;
+}
+
+.burger-menu {
+  display: none;
+}
+
+#deliver {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.hero_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 85px;
+}
+
+.title_span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #79C8C7;
+}
+
+.big__list {
+  width: 350px;
+  height: 300px;
+  padding: 15px;
+  position: relative;
+}
+
+
+
+.big__list::before {
+  content: " ";
+  background-image: url('../img/aa.png');
+  position: absolute;
+  background-position: center;
+  top: -5px;
+  left: 150px;
+  width: 67px;
+  height: 57px;
+  z-index: -1;
+}
+
+.txt {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.small__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79C8C7;
+}
+
+.name {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 35px;
+}
+
+.bg__post1 {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  background-image: url('../img/bg_first.svg');
+  top: 0;
+  left: 0;
+}
+
+.bg__post2 {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  background-image: url('../img/bg_second.svg');
+  bottom: 0;
+  right: 3px;
+}
+
+@media screen and (max-width:760px) {
+  .container {
+    max-width: 650px;
+  }
+
+  .open {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    padding-top: 25px;
+  }
+
+  .need__div {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .big {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .big__list {
+    margin-top: 80px;
+  }
+
+  .big__item {
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width:660px) {
+  .container {
+    max-width: 550px;
+  }
+
+  
+  .need__div {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .big {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .big__list {
+    margin-top: 80px;
+  }
+
+  .big__item {
+    justify-content: center;
+  }
+  .header__btn {
+    display: none;
+  }
+
+  .header__item {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+    font-size: 30px;
+    padding-top: 8px;
+  }
+}
+
+.open {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title {
+  width: 320px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 80px;
+  color: #FFFFFF;
+  margin: 0;
+  padding-bottom: 12px;
+}
+
+.title__span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 80px;
+  color: #F67E7E;
+}
+
+.start__text {
+  width: 400px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.need__title {
+  width: 440px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.statics__list {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.statics__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.statics__item::before {
+  content: ' ';
+  width: 72px;
+  height: 72px;
+  background-image: url('../img/boy.png');
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.txt__forb {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.red-txt {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #F67E7E;
+}
+
+.statics__item:nth-child(2)::before {
+  background-image: url(../img/setting.svg);
+}
+
+.statics__item:nth-child(3)::before {
+  background-image: url(../img/stast.svg);
+}
