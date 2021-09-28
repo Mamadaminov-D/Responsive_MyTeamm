@@ -10,20 +10,35 @@
 body {
   font-family: 'Livvic', sans-serif;
   overflow-x: hidden;
+  background-color: var(--start-color);
 }
 
 
 header {
   background-color: var(--start-color);
+  padding-bottom: 112px;
 }
 
 .header__div {
   margin-bottom: 120px;
 }
 
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
 .header__logo {
   margin-right: 80px;
   padding-top: 10px;
+}
+
+.header__item {
+  padding: 0;
 }
 
 .header__list:nth-child(1) {
@@ -31,9 +46,6 @@ header {
   padding-top: 20px;
 }
 
-.header__btn {
-  margin-right: 100px;
-}
 
 .header__list {
   font-style: normal;
@@ -52,60 +64,33 @@ header {
   transition: background 0.5s ease, color 0.6s ease;
 }
 
+
 .header__btn:hover {
   background-color: transparent;
   color: var(--ff);
   transition: background 0.5s ease, color 0.6s ease;
 }
 
-@media screen and (max-width:769px) {
-  .container {
-    padding: 0 30px;
-  }
-
-  .header__btn {
-    margin-right: 500px;
-  }
-
-  .opening {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin-left: 50px;
-  }
-
-  .opening__title {
-    margin: 0;
-    padding: 0 !important;
-  }
-
-  .opening__txt {
-    text-align: center;
-    width: 550px !important; 
-    margin-right: 30px !important;
-  }
-
-  .line {
-    display: none;
-  }
-
-  .post {
-    margin-left: 99%;
-    margin-bottom: 50px;
-  }
+.opening {
+  display: flex;
 }
 
 .opening__title {
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
+  margin: 0;
   line-height: 100px;
   color: var(--ff);
   padding-bottom: 98px;
 }
 
+.catch {
+  width: 66%;
+  margin-left: auto;
+}
+
 .opening__txt {
-  width: 730px;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -119,27 +104,15 @@ header {
   left: 0;
 }
 
+.burger-menu {
+  display: none;
+}
+
+
+
 .post {
   bottom: -52px;
   right: -85px;
-}
-
-@media screen and (max-width:796px) {
-
-  .workers__item {
-    padding: 0;
-    justify-content: center;
- 
-  }
-  .container {
-    width: 600px;
-  }
-
-  .workers__list {
-    width: 20 px;
-
-  }
-  
 }
 
 #hero__section {
@@ -147,34 +120,29 @@ header {
   background-image: url('../img/midle-post.png');
   background-position: right bottom;
   background-repeat: no-repeat;
+  padding-top: 140px;
+  padding-bottom: 150px;
 }
 
 .hero__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 38px;
+  line-height: 38px;
   color: var(--ff);
   margin: 0;
-  padding-top: 140px;
+
 }
 
-.h__post {
-  position: relative;
-  top: 0;
-  left: -78px;
-}
 
-.directrs__div {
-  padding-bottom: 150px;
-} 
+
 
 .workers__item {
   padding: 0;
 }
 
 .workers__list {
-  width: 350px;
+  width: 32%;
   height: 253px;
   padding: 32px 24px;
   margin-top: 45px;
@@ -219,6 +187,8 @@ header {
 
 
 
+
+
 .plus-btn {
   position: absolute;
   color: #012F34;
@@ -257,6 +227,7 @@ header {
 }
 
 #sponsor-section {
+  width: 100vw;
   background-color: #012F34;
   background-image: url('../img/radius-post.png');
   background-position: left top;
@@ -281,6 +252,7 @@ header {
 }
 
 #rozviy-section {
+  width: 100vw;
   background-image: url('../img/redline.png');
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -301,4 +273,100 @@ header {
 
 .btn {
   display: inline-block;
+}
+
+
+.footer__menu:nth-child(1) {
+  margin-right: 28px;
+}
+
+.footer__icon {
+  margin-right: 8px;
+}
+
+.footer__list {
+  flex-grow: 1;
+}
+
+.footer__div {
+  margin-right: 30px;
+}
+
+
+@media only screen and (max-width: 990px) {
+
+
+  .container {
+    max-width: 990px;
+
+  }
+
+  .opening {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .opening__title {
+    padding-bottom: 0;
+  }
+
+  .catch {
+    margin: 0 auto;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .workers__item {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .workers__list {
+    width: 48%;
+  }
+
+  #sponsor-section {
+    background-color: #012F34;
+    background-image: url('../img/radius-post.png');
+    background-position: left top -50%;
+  }
+
+  .sponsr__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: #FFFFFF;
+  }
+
+  #rozviy-section {
+    background-image: url('../img/redline.png');
+    background-position: left bottom -30px;
+    margin-bottom: 50px;
+    padding: 76px 0;
+  }
+
+  .pinkk__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: #012F34;
+  }
+
+  .footer__list {
+    justify-content: end;
+  }
+
+  .footer__div {
+    margin: 0 auto;
+    text-align: center;
+
+  }
 }
